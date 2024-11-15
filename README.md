@@ -16,18 +16,15 @@ Este es el frontend de una aplicación para gestionar solicitudes de tipo de cam
 
 Instalar las dependencias: Si estás usando npm:
 
-bash
 npm install
+
 Si prefieres usar yarn:
-
-bash
 yarn install
+
 Ejecutar la aplicación:
+npm 
 
-bash
-npm start
 O si usas yarn:
-
-bash
 yarn start
+
 La aplicación estará disponible en http://localhost:3000.
