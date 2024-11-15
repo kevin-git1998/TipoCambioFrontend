@@ -1,30 +1,37 @@
-# TipoCambioFrontend
+# TipoCambioBackend
 
-Este es el frontend de una aplicación para gestionar solicitudes de tipo de cambio. El proyecto está desarrollado con **React**.
+## Descripción
+Este backend proporciona los servicios para gestionar solicitudes de tipo de cambio.
 
 ## Requisitos
 
-- Node.js 14 o superior
-- npm o yarn
+- **Java 17**
+- **MySQL 8**
+- **Maven 3.6**
 
-## Instalación y Ejecución
+## Instalación
 
-1. **Clonar el repositorio**:
+1. Clona el repositorio:
    ```bash
-   git clone https://github.com/usuario/TipoCambioFrontend.git
-   cd TipoCambioFrontend
+   git clone https://github.com/usuario/TipoCambioBackend.git
 
-Instalar las dependencias: Si estás usando npm:
+Configura la base de datos:
 
-npm install
+Crea la base de datos en MySQL:
 
-Si prefieres usar yarn:
-yarn install
+sql
 
-Ejecutar la aplicación:
-npm 
+CREATE DATABASE tipo_cambio_db;
+Configura las credenciales en src/main/resources/application.properties:
 
-O si usas yarn:
-yarn start
+properties
 
-La aplicación estará disponible en http://localhost:3000.
+spring.datasource.url=jdbc:mysql://localhost:3306/tipo_cambio_db
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+Compila y ejecuta el proyecto:
+
+bash
+
+./mvnw clean install
+./mvnw spring-boot:run
